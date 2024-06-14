@@ -1,0 +1,80 @@
+Reverse a string without affecting special characters. Given a string S, containing special characters and all the alphabets, reverse the string without affecting the positions of the special characters.
+
+Input:
+
+A&B
+
+Output:
+
+B&A
+
+Explanation: As we ignore '&' and
+
+As we ignore '&' and then reverse, so answer is "B&A".
+
+
+
+
+
+For example:
+
+
+
+Input	Result
+
+A&x#
+
+x&A#
+
+
+
+#special characters
+
+l=[]
+
+s=input()
+
+c=0
+
+n=len(s)
+
+for i in s:
+
+    l.append(i)
+
+z=[]
+
+#print(l)
+
+for i in range(len(l)-1,-1,-1):
+
+    if l[i].isalpha()==True:
+
+        z.append(l[i])
+
+        c=c+1
+
+c=n-c
+
+#print(z)
+
+for i in range(0,c):
+
+    z.append(0)
+
+
+
+for i in range(0,len(s)):
+
+    if l[i].isalnum()==False:
+
+        z.insert(i,l[i])
+
+#print(z)    
+
+for i in z:
+
+    if i!=0:
+
+        print(i,end='')
+
