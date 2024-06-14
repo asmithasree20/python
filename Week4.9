@@ -1,0 +1,52 @@
+Given a positive integer N, check whether it can be represented as a product of single digit numbers. 
+
+Input Format:
+
+Single Integer input.
+
+Output Format:
+
+Output displays Yes if condition satisfies else prints No.
+
+Example Input:
+
+14
+
+Output:
+
+Yes
+
+Example Input:
+
+13
+
+Output:
+
+No
+
+#single digit
+
+num = int(input())
+
+original_num = num
+
+possible = True
+
+
+
+for i in range(2, 10):
+
+    while num % i == 0:
+
+        num //= i
+
+
+
+if num == 1:
+
+    print("Yes")
+
+else:
+
+    print("No")
+
