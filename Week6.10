@@ -1,0 +1,64 @@
+Given a string S which is of the format USERNAME@DOMAIN.EXTENSION, the program must print the EXTENSION, DOMAIN, USERNAME in the reverse order.
+
+
+
+Input Format:
+
+The first line contains S.
+
+
+
+Output Format:
+
+The first line contains EXTENSION.
+
+The second line contains DOMAIN.
+
+The third line contains USERNAME.
+
+
+
+Boundary Condition:
+
+1 <= Length of S <= 100
+
+
+
+Example Input/Output 1:
+
+
+
+Input:
+
+
+
+vijayakumar.r@rajalakshmi.edu.in
+
+
+
+Output:
+
+
+
+edu.in
+
+rajalakshmi
+
+vijayakumar.r
+
+
+
+#email extension
+
+s=input()
+
+a=s.find('@')
+
+b=s.find('.')
+
+print(s[b+1:])
+
+print(s[a+1:b])
+
+print(s[0:a])
+
