@@ -1,0 +1,46 @@
+Coders here is a simple task for you, Given string str. Your task is to check whether it is a binary string or not by using python set.
+
+Examples:  
+
+Input: str = "01010101010"
+
+Output: Yes
+
+
+
+Input: str = "REC101"
+
+Output: No
+
+
+
+
+
+For example:
+
+Input	Result
+
+01010101010	Yes
+
+010101 10101	No
+
+#Binary 
+
+s=input()
+
+c=0
+
+for i in s:
+
+    if i=='0' or i=='1':
+
+        c=c+1
+
+if c==len(s):
+
+    print("Yes")
+
+else:
+
+    print("No")
+
